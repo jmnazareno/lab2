@@ -1,82 +1,267 @@
+/*font "Sofia Sans"*/
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@100;400&display=swap');
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: url("background image.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-background-position: center;
-
-
-
-
+li, a, button {
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
 }
 
 header {
-  
-  
-  padding: 1px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 10%;
+    background-color: #2d150a;
 }
 
-nav {
-  float: left;
-  width: 20%;
-  height: 500px;
-  background: ;
-  padding: 20px;
+.logo {
+    cursor: pointer;
+    width: 125px;
+}
+
+.nav_link {
+    list-style: none;
+}
+
+.nav_link li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_link li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_link li a:hover {
+    color: #b8a68e;
+    cursor: pointer;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #b8a68e;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;;
+}
+
+button:hover{
+    background-color: white;
+    color: #b8a68e;
 }
 
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
+/* Welcome */
 
-article {
-  float: left;
-  padding: 20px;
-  width: 80%;
-  color: white;
-  height: 500px; 
-}
-
-section::after {
-  content: "";
-  display: table;
-  clear: both;
+.WelcomeSection {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 91vh;
+    background-image: url("WelcomeBG.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
 }
 
 
-footer {
-  background-color: #252B39;
-  padding: 10px;
-  text-align: center;
-  color: white;
+.Welcome {
+    text-decoration: none;
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: 500;
+    font-size: 100PX;
+    color: white;
+    background-color: transparent;
 }
 
 
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
+
+
+
+
+
+/* About Section */
+
+.AboutSection {
+    display: grid;
+    place-items: center;
+    vertical-align: text-top;
+    align-content: center;
+    min-height: 90.5vh;
+    background-color: #b8a68e;
+    padding-bottom: 5%;
+}
+
+.title {
+    margin: 4rem 0 5rem 0;
+    text-align: center;
+    background-color: #b8a68e;
   }
+  
+  .title h1 {
+    font-size: 3rem;
+    font-weight: 450;
+    display: inline-block;
+    position: relative;
+    font-family: "Sofia Sans", sans-serif;
+    z-index: 0;
+    color: white;
+    background-color: #b8a68e;
+  }
+
+.AboutMeSection {
+    display: grid;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    background-color: #b8a68e;
+   
 }
 
-.Ja {
-padding: 5px;
+.AboutMeSection img {
+    height: auto;
+    width: 450px;
 }
 
-.Ja h1 {
-   text-align: center;
-   font-size: 50PX;
-   color: white;
+.AboutMeSection p {
+    text-decoration: none;
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: 300;
+    color: white;
+    background-color: #b8a68e;
+    inline-size: 400px;
+    overflow-wrap: break-word;
+}
 
-.JS {
-  display: grid;
-  grid-template-columns: auto auto auto;
+.AboutMeSection h1 {
+    text-decoration: none;
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: 400;
+    color: white;
+    background-color: #b8a68e;
+}
 
+
+
+
+/* Contact me */
+.contactSection {
+    display: grid;
+    place-items: center;
+    vertical-align: text-top;
+    align-content: center;
+    min-height: 90.5vh;
+    background-color: #7B6D5b;
+    padding-bottom: 5%;
+}
+
+.ContactMeTitle {
+    margin: 4rem 0 5rem 0;
+    text-align: center;
+    background-color: #7B6D5b;
+
+}
+
+.ContactMeTitle h1 {
+    font-size: 3rem;
+    font-weight: 450;
+    display: inline-block;
+    position: relative;
+    font-family: "Sofia Sans", sans-serif;
+    z-index: 0;
+    color: white;
+    background-color: #7B6D5b;
+}
+
+
+.ContactMe {
+    display: grid;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    background-color: #7B6D5b;
+}
+/* Contact Description */
+.ContactMeDescription{
+    display: grid;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    background-color: #7B6D5b;
+}
+
+.ContactMeDescription h2{
+    text-decoration: none;
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: 400;
+    color: white;
+    background-color: #7B6D5b;
+
+}
+
+/* Contact Details */
+.ContactMeDetails{
+    inline-size: 400px;
+    overflow-wrap: break-word;
+}
+
+.input-field {
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+    font-family: "Sofia Sans", sans-serif;
+}
+
+.textarea-field {
+    height: 150px;
+    padding-top: 10px;
+    font-family: "Sofia Sans", sans-serif;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 9px 25px;
+    background-color: white;
+    color: #7B6D5b;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;;
+}
+
+.btn:hover{
+    background-color: #7B6D5b;
+    color: white;
+}
+
+    
+/* Java Script */
+
+.JavaScript {
+    background-color: #353a47;
+    
+}
