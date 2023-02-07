@@ -11,7 +11,7 @@ if ($conn->connect_error) {
 }
 
 // Create database
-$sql = "CREATE DATABASE myDB";
+$sql = "CREATE DATABASE webprogmi211";
 if ($conn->query($sql) === TRUE) {
   echo "Database created successfully";
 } else {
